@@ -1,0 +1,360 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+#header-main{
+    width: 100%;
+    display: inline-block;
+    background-color: #0f3cc9;
+    padding: 10px 0;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.toggle-icon{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+.header-logo{
+    width: auto;
+    float: left;
+}
+.header-logo a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #0a2986;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+.menu{
+    width: auto;
+    float: left;
+    margin-left: -232px;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 0 15px;
+
+}
+.menu strong {
+    font-size: 10px;
+    background: red;
+    padding: 2px 10px;
+    border-radius: 7px;
+    position: absolute;
+    top: 4px;
+    left: 20%;
+}
+.serch-input{
+    width: auto;
+    float: left;
+    position: relative;
+}
+.serch-input input {
+    width: 180px;
+    height: 26px;
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #0a2986;
+    color: white !important;
+    padding-left: 30px;
+}
+.serch-input input::placeholder{
+    color: white;
+}
+.serch-input a {
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    left: 8px;
+    top: 4px;
+}
+span.user {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: white;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 25px;
+}
+
+#manage-main{
+    width: 100%;
+    display: inline-block;
+}
+.manage{
+    width: 100%;
+    display: inline-block;
+}
+.manage-text{
+    width: 50%;
+    display: inline-block;
+}
+.manage-text h3{
+    font-size: 30px;
+    color: black;
+    max-width: 400px;
+    padding-top: 40px;
+    font-weight: bolder;
+}
+.manage-text ul li{
+    list-style: none;
+   
+}
+ul.paddding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.manage-text  a{
+    font-size: 14px;
+    color: black;
+    padding: 14px 0;
+    text-decoration: none;
+    display: inline-block;
+}
+/* .manage-text li a:last-child{
+    color: red;
+} */
+.manage-text i.fa.fa-check {
+    background:#1eccaf;
+    margin-right: 10px;
+    font-size: 13px;
+    border-radius: 50px;
+    color: white;
+    padding: 5px;
+}
+.scan {
+    width: 326px;
+    display: inline-block;
+    background-color: #ddd;
+    padding: 17px;
+    border-radius: 10px;
+}
+.sacn-img{
+    width: 25%;
+    float: left;
+    margin-right: 15px;
+    
+}
+.sacn-img img{
+    width: 100%;
+    
+}
+.scan h5{
+    font-size: 18px;
+}
+.scan p {
+    font-size: 14px;
+    max-width: 387px;
+    line-height: 20px;
+}
+.manage-box{
+    width: 50%;
+    float: right;
+    padding: 50px;
+}
+
+.manage-jio{
+    width: auto;
+    display: inline-block;
+    box-shadow: 0 0 20px 0 #ddd;
+    padding: 30px;
+    border-radius: 30px;
+}
+.manage-jio h2{
+    font-size: 44px;
+}
+.manage-jio p{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+
+.tab {
+    width: 100%;
+    display: inline-block;
+    background-color: #ddd;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 50%;
+    border-radius: 30px;
+  }
+  .tabcontent h3{
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+  }
+  
+  /* Change background color of buttons on hover */
+  /* .tab button:hover {
+    background-color: #0f3cc9;
+  } */
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #0f3cc9;
+    color:white;
+  }
+
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+
+  .togalle-bottons {
+    width: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.togalle-bottons a{
+    text-decoration: none;
+    background-color: #b5bedb;
+    color: white;
+    padding: 10px 80px;
+    border-radius: 20px;
+    display: inline-block;
+}
+@media screen and (max-width:991px) {
+ 
+    .toggle-icon {
+        display: block;
+        color: white;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+   
+    .header-logo {
+        width: auto;
+        float: left;
+        padding: 0 60px;
+    }
+    .header {
+        justify-content: normal;
+    }
+
+    #header-main {
+        padding: 20px 0;
+    }
+    .serch-input input {
+        width: 196px;
+        height: 44px;
+    }
+    .serch-input a {
+        top: 12px;
+    }
+    span.user {
+        margin-left: 96px;
+    }
+  
+    .menu {
+        width: 100px;
+        position: fixed;
+        top: 84px;
+        background-color:black;
+        left: 0;
+        margin-left: 2px;
+        transform: translateX(-103px);
+        transition: .5s;
+    }
+
+    .menu strong{
+        display: none;
+    }
+    .main .menu{
+      transform: translateX(0);
+    }
+    
+
+.menu ul li a {
+     display: inline-block;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+.manage-text {
+    display: none;
+}
+.manage-box {
+    width: 100%;
+}
+.manage-jio {
+    padding: 75px;
+}
+    
+  
+}
+
+
+/* basic-main :start */
+
+#basic-main{
+    width: 100%;
+    display: inline-block;
+}
+.basic{
+    width: 100%;
+    display: inline-block;
+}
+.basic ul li{
+    display: inline-block;
+}
+.basic ul{
+    display: inline-block;
+}
+
+.basic ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    width: 40px;
+    height: 30px;
+    background-color: red;
+    
+}
+.basic-box {
+    width: 80%;
+    box-shadow: #ddd 0 0 20px 0;
+    height: 230px;
+}

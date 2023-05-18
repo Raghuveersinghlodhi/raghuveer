@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header id="header-main">
+        <div class="container">
+            <div class="header">
+                <div class="toggle-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="header-logo">
+                   <a href="#">Jio</a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">True 5g <strong>New</strong></a></li>
+                        <li><a href="#">JioFiber</a></li>
+                        <li><a href="#">Business</a></li>
+                         <li><a href="#">Shop</a></li>
+                         <li><a href="#">Apps</a></li>
+                         <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="serch-input">
+                    <input type="text" placeholder="Search">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                   <span class="user"><i class="fa fa-user" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="manage-main">
+        <div class="container">
+            <div class="manage">
+                <div class="manage-text">
+                    <h3>Manage your Digital Life with the My Jio App</h3>
+                    <ul class="paddding">
+                        <li><a href="#"><i class="fa fa-check" aria-hidden="true"></i>Recharge, pay bills, and chacke balance</a></li>
+                        <li><a href="#"><i class="fa fa-check" aria-hidden="true"></i>Shop, UPI, and health</a></li>
+                        <li><a href="#"><i class="fa fa-check" aria-hidden="true"></i>Movies,music, and games</a></li>
+                        <li><a href="#"><i class="fa fa-check" aria-hidden="true"></i>Instant help with jiocare</a></li>  
+                      
+
+                    </ul>
+
+                    <div class="scan">
+                        <div class="sacn-img">
+                            <img src="images/istockphoto-828088276-612x612.jpg" alt="">
+                        </div>
+                        <h5>Download MyJio now</h5>
+                        <p>Scan The QR code width youe mobile to Download the app</p>
+                    </div>
+                </div>
+                <div class="manage-box">
+                    <div class="manage-jio">
+                        <h2>Welcome to Jio</h2>
+                        <p>Log in to Unlock a world of Digital expriences</p>
+                        <div class="toggle-button">
+                            <div class="tab">
+                                <button class="tablinks active" onclick="openCity(event, 'London')"><i class="fa fa-mobile" aria-hidden="true"></i> Mobile</button>
+                                <button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> JioFiber</button>
+                               
+                              </div>
+                              
+                              <div id="London" class="tabcontent">
+                                <h3>  Mobile Number</h3>
+                               
+                              </div>
+                              
+                              <div id="Paris" class="tabcontent">
+                                <h3> JioFiber</h3>
+                              
+                              </div>
+                              
+                             
+                              
+                              
+                        </div>
+                        <div class="togalle-bottons">
+                            <a href="#">Generate OTP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+<script src="js/jquery-3.6.4.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/slick.min.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+
+  <script>
+    $(document).ready(function(){
+      $(".toggle-icon").click(function(){
+        $(".header").toggleClass("main");
+      });
+    });
+ b </script>
+</body>
+</html>
